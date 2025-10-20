@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E0C1B8;
+    margin:0;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 15px;
+}
+
+nav .links{
+    color: #2E324D;
+}
+
+nav .mainlink{
+    width: 8rem;
+    background-color: #2E324D;
+    color: white;
+}
