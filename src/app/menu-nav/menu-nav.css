@@ -7,23 +7,51 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
-    background-color: #E0C1B8;
+    background-color: #F3DFDE;
     margin:0;
+    max-height: 100px;
+}
+
+.container h1{
+    color: #6B3882;
+    margin-left: 10px;
+    font-size: 40px;
+    align-self: center;
+    font-weight: bolder;
 }
 
 nav{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
-    margin: 15px;
+    margin-right: 30px;
 }
 
 nav .links{
-    color: #2E324D;
+    color: #6B3882;
+}
+
+nav .links a{
+    text-decoration: none;
+}
+
+nav .links:hover a{
+    color: #8e0bc2;
 }
 
 nav .mainlink{
     width: 8rem;
-    background-color: #2E324D;
-    color: white;
+    height: 2rem;
+    background-color: #723E99;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav .mainlink a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav .mainlink:hover{
+    background-color: #8e0bc2;
 }
