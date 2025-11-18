@@ -1,14 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MenuNav } from './menu-nav/menu-nav';
-import { Home } from './home/home';
-import { AboutUs } from './about-us/about-us';
+import { CommonModule } from '@angular/common';
+import { MainPageComponent } from './main-page/main-page';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuNav, Home, AboutUs],
+  imports: [RouterOutlet, CommonModule, MainPageComponent], 
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('proyectoFrontend');
+
+
+  
 }

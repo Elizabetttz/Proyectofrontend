@@ -1,0 +1,38 @@
+
+<div class="contenedor">
+<section class="container">
+  <h2 class="text-center fw-bold mb-2">PETFIND</h2>
+  <h3 class="text-center text-muted mb-4">Conoce a alguno de nuestros peludos</h3>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let m of mascotas">
+      <div class="card h-100 shadow-sm">
+        <img 
+          [src]="m.imagen" 
+          [alt]="m.nombre" 
+          class="card-img-top" 
+          style="height: 330px; object-fit: fill;"
+        >
+
+        <div class="card-body">
+          <h5 class="card-title mb-1">{{ m.nombre }}</h5>
+          <h6 class="text-primary">{{ m.tipo }}</h6>
+
+          <p class="card-text mt-2">{{ m.descripcion }}</p>
+
+          <ul class="list-unstyled small text-muted">
+            <li>{{ m.edad }}, {{ m.genero }}</li>
+            <li>{{ m.personalidad }}</li>
+            <li>{{ m.convivencia }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a routerLink="/mascotas" class="btn btn-outline-primary">Ver todos</a>
+  </div>
+</section>
+
+</div>

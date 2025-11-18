@@ -4,15 +4,19 @@ body{
 
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
+.contenedor{
     background-color: #F3DFDE;
-    margin:0;
-    max-height: 100px;
 }
 
-.container h1{
+header{
+    padding: 20px;
+}
+
+.mb-4{
+    margin-bottom: 0;
+}
+
+.contenedor h1{
     color: #6B3882;
     margin-left: 10px;
     font-size: 40px;
@@ -20,38 +24,34 @@ body{
     font-weight: bolder;
 }
 
-nav{
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    margin-right: 30px;
+.nav-link{
+    color: #6B3882;
+    font-size: 15px;
+    font-weight:normal;
+    font-family: 'Poppins' sans-serif;
 }
 
-nav .links{
+.nav-link:hover{
+    color: #452454;
+    font-weight: bold;
+}
+
+header .me-2{
+    border-color: #6B3882;
     color: #6B3882;
 }
 
-nav .links a{
-    text-decoration: none;
-}
-
-nav .links:hover a{
-    color: #8e0bc2;
-}
-
-nav .mainlink{
-    width: 8rem;
-    height: 2rem;
-    background-color: #723E99;
-    text-align: center;
-    border-radius: 5px;
-}
-
-nav .mainlink a{
+header .me-2:hover{
+    background-color: #6B3882;
     color: whitesmoke;
-    text-decoration: none;
 }
 
-nav .mainlink:hover{
-    background-color: #8e0bc2;
+header .btn-primary{
+    background-color: #6B3882;
+    border-color: #6B3882;
+}
+
+header .btn-primary:hover{
+    background-color: #452454;
+    color: whitesmoke;
 }

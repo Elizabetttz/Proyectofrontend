@@ -1,0 +1,159 @@
+.catalogo-container {
+  background-color: #F4DFDF;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.catalogo-titulo {
+  color: #7b2cbf;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .catalogo-titulo {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .catalogo-titulo {
+    font-size: 3.5rem;
+  }
+}
+
+.catalogo-subtitulo {
+  color: #58158c;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .catalogo-subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .catalogo-subtitulo {
+    font-size: 1.6rem;
+  }
+}
+
+.mascota-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mascota-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.mascota-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+@media (min-width: 768px) {
+  .mascota-img-container {
+    height: 300px;
+  }
+}
+
+.mascota-img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  transition: transform 0.3s ease;
+}
+
+.mascota-card:hover .mascota-img {
+  transform: scale(1.1);
+}
+
+.mascota-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .mascota-info {
+    padding: 20px;
+  }
+}
+
+.mascota-nombre {
+  color: #5a189a;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .mascota-nombre {
+    font-size: 1.5rem;
+  }
+}
+
+.mascota-descripcion {
+  color: #7b2cbf;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .mascota-descripcion {
+    font-size: 0.9rem;
+  }
+}
+
+.mascota-caracteristicas {
+  color: #2f0b67;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .mascota-caracteristicas {
+    font-size: 0.85rem;
+  }
+}
+
+.btn-adoptar {
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #5a189a;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .btn-adoptar {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+.btn-adoptar:hover {
+  background-color: #7b2cbf;
+  transform: scale(1.05);
+}
